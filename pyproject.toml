@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "pymc_statespace"
+version = "0.1.0"
+description = ""
+authors = ["Firstname Lastname <your.email@email.com>"]
+readme = "README.md"
+packages = [{include = "pymc_statespace", from="src"}]
+
+[tool.poetry.dependencies]
+python = "^3.10.6"
+numpy = "^1.24.3"
+pandas = "^2.0.1"
+scikit-learn = "^1.2.2"
+fastparquet = "^2023.4.0"
+numpyro = "^0.13.0"
+pymc-experimental = {git = "https://github.com/pymc-devs/pymc-experimental.git"}
+ipykernel = "^6.25.2"
+statsmodels = "^0.14.0"
+orbit-ml = "^1.1.4.2"
+graphviz = "^0.20.1"
+
+
+[tool.poetry.group.dev.dependencies]
+matplotlib = "^3.7.1"
+ipykernel = "^6.23.1"
+pydantic = "^1.10.7"
+pytest = "^7.3.1"
+nbformat = "^5.8.0"
+ipywidgets = "^8.0.6"
+jupytext = "^1.14.5"
+jupyter = "^1.0.0"
+pre-commit = "^3.3.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

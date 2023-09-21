@@ -1,6 +1,8 @@
 # pymc_statespace
 
-A project package generated using the [cookiecutter](https://cookiecutter.readthedocs.io/en/stable/) library and the https://github.com/banditkings/ds_cookie template.
+Set of notebooks with gentle introductions to state space models with `statsmodels` (and `pymc_experimental`), bayesian inference with `numpyro`, and an evaluation of various time series utilities (i.e. `orbit`).
+
+My aim is to have a simple onramp into state space models 
 
 # Usage: with`poetry` + `pyenv`
 
@@ -35,14 +37,3 @@ Next time you enter into the directory, `pyenv` will detect and activate local p
 ```bash
 poetry shell
 ```
-# Testing
-
-Run all tests in the `src\tests\` folder:
-
-```bash
-poetry run pytest
-```
-
-# Git
-
-See this [gist](https://gist.github.com/mindplace/b4b094157d7a3be6afd2c96370d39fad) for a reminder on the steps to initialize this as a git repo and push to a remote, empty repo.

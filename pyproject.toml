@@ -22,6 +22,8 @@ causalpy = "^0.1.1"
 tfcausalimpact = "^0.0.13"
 tensorflow = "^2.13.0"
 pandas-datareader = "^0.10.0"
+statsforecast = "^1.6.0"
+sts-jax = {git = "https://github.com/probml/sts-jax"}
 
 
 [tool.poetry.group.dev.dependencies]

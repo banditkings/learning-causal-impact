@@ -24,6 +24,7 @@ tensorflow = "^2.13.0"
 pandas-datareader = "^0.10.0"
 statsforecast = "^1.6.0"
 sts-jax = {git = "https://github.com/probml/sts-jax"}
+ortools = "^9.8.3296"
 
 
 [tool.poetry.group.dev.dependencies]

@@ -2,7 +2,7 @@
 name = "pymc_statespace"
 version = "0.1.0"
 description = ""
-authors = ["Firstname Lastname <your.email@email.com>"]
+authors = ["Nelson Tang <nelson.tang.17@gmail.com>"]
 readme = "README.md"
 packages = [{include = "pymc_statespace", from="src"}]
 

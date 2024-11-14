@@ -43,6 +43,59 @@ jupyter = "^1.0.0"
 pre-commit = "^3.3.2"
 pymc = "^5.10.3"
 
+
+[tool.uv]
+dev-dependencies = [
+    "matplotlib<4.0.0,>=3.7.1",
+    "ipykernel<7.0.0,>=6.23.1",
+    "pydantic<2.0.0,>=1.10.7",
+    "pytest<8.0.0,>=7.3.1",
+    "nbformat<6.0.0,>=5.8.0",
+    "ipywidgets<9.0.0,>=8.0.6",
+    "jupytext<2.0.0,>=1.14.5",
+    "jupyter<2.0.0,>=1.0.0",
+    "pre-commit<4.0.0,>=3.3.2",
+    "pymc<6.0.0,>=5.10.3",
+]
+
+[tool.pdm.build]
+includes = [
+    "src/pymc_statespace",
+]
 [build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+
+[project]
+authors = [
+    {name = "Nelson Tang", email = "nelson.tang.17@gmail.com"},
+]
+requires-python = "<3.11,>=3.10"
+dependencies = [
+    "numpy<2.0.0,>=1.24.3",
+    "pandas<3.0.0,>=2.0.1",
+    "scikit-learn<2.0.0,>=1.2.2",
+    "fastparquet<2024.0.0,>=2023.4.0",
+    "numpyro<1.0.0,>=0.13.0",
+    "pymc-experimental @ git+https://github.com/pymc-devs/pymc-experimental.git",
+    "ipykernel<7.0.0,>=6.25.2",
+    "statsmodels<1.0.0,>=0.14.0",
+    "orbit-ml<2.0.0.0,>=1.1.4.2",
+    "graphviz<1.0.0,>=0.20.1",
+    "causalpy<1.0.0,>=0.1.1",
+    "tfcausalimpact<1.0.0,>=0.0.13",
+    "tensorflow<3.0.0,>=2.13.0",
+    "pandas-datareader<1.0.0,>=0.10.0",
+    "statsforecast<2.0.0,>=1.6.0",
+    "sts-jax @ git+https://github.com/probml/sts-jax",
+    "ortools<10.0.0,>=9.8.3296",
+    "doubleml<1.0.0,>=0.7.0",
+    "pyro-ppl<2.0.0,>=1.9.0",
+    "tensorflow-probability<1.0.0,>=0.24.0",
+    "tf-keras<3.0.0,>=2.17.0",
+]
+name = "pymc_statespace"
+version = "0.1.0"
+description = ""
+readme = "README.md"

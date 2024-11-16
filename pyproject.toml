@@ -7,7 +7,7 @@ readme = "README.md"
 packages = [{include = "pymc_statespace", from="src"}]
 
 [tool.poetry.dependencies]
-python = ">=3.10, <3.11"
+python = ">=3.10, <4.0"
 numpy = "^1.24.3"
 pandas = "^2.0.1"
 scikit-learn = "^1.2.2"

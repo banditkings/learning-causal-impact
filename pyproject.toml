@@ -96,6 +96,7 @@ dependencies = [
     "tf-keras<3.0.0,>=2.17.0",
     "jax>=0.4.35",
     "polars>=1.19.0",
+    "pymc>=5.18.1",
 ]
 name = "pymc_statespace"
 version = "0.1.0"
